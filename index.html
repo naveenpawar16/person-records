@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GLNR</title>
+
+    <script src="action.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1 style="padding-left:20px;">Records......</h1>
+    <div id="inputDiv">
+        <form id="f1">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label>Name :</label> <input id="name" type="text" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td><label style="padding: 6px;">Age :</label> <input id="age" placeholder="Age b/w 1 to 100"
+                                min="1" max="100" type="number" value=""></td>
+                    </tr>
+                    <tr>
+                        <td id="gen"><label style="padding: 7px;">Sex :</label>
+                            <input type="radio" id="Male" name="gender" value="Male"> Male
+                            <input type="radio" id="Female" name="gender" value="Female"> Female
+                            <input type="radio" id="Other" name="gender" value="Other"> Other
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <button class="btn btn-primary btn-block" onclick="myFunction()">Save</button>
+    </div>
+
+    
+    <div id="tableDiv" style="display: none;">
+        <table id="table2">
+            <thead>
+                <th id="th1"> Name </th>
+                <th id="th2"> Age </th>
+                <th id="th2"> Sex </th>
+            </thead>
+
+            <script>
+                function addTable(name, age, sex, index) {
+                    // console.log(d);
+                    document.getElementById('tableDiv').innerHTML +=
+                        '<pre id=' + name + index + '><tr><td>' + name + " " + '</td></tr>  <tr><td>' + "       " + age + '</td></tr>   <tr><td>' + "      " + sex +
+                        '</td></tr>     <button id=' + name + "a" + ' onclick="editRow(' + index + ')">edit</button> <button id=' + name + ' onclick="deleteRow(' + index + ')">delete</button></pre>';
+
+                }
+
+            </script>
+
+        </table>
+    </div>
+    <div id="colorDiv" style="display: none;">
+        <h3> Select color for Rows....</h3>
+        <input type="color" id="colorPick" value="#e66465" onchange="colorChange()">
+        <span style="position: absolute;left: 57px;">OR</span>
+        <input type="text" id="colorInp" placeholder="Type color in Hex & #Enter" value="" onchange="colorInput()">
+    </div>
+
+</body>
+
+
+</html>

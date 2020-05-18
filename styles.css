@@ -1,0 +1,63 @@
+#name,#age {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }  
+  
+  #inputDiv {
+    border-radius: 5px;
+    background-color:  #cfeaee;
+    padding: 20px;
+    width: 320px;
+    left: 15px;
+    position: absolute;    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #tableDiv {
+    background-color: #f2f2f2;
+    width: 422px;
+    height: 240px;
+    top: 69px;
+    bottom: 76px;
+    left: 448px;
+    position: absolute;
+    overflow: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;        
+  }
+  #colorDiv{
+    position: absolute;
+    top: 351px;
+    left: 36px;
+    height: 123px;
+    width: 274px;
+    background-color: #f7f2ec;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #th1{
+    padding-left: 10px;
+    padding-right: 66px;
+  }
+  #th2{
+  padding-right: 65px;
+  }
+  #colorPick{
+    left: 6px;
+    position: absolute;
+  }
+  #colorInp{
+    position: absolute;
+    top: 54px;
+    right: 2px;
+  }
+
+  
